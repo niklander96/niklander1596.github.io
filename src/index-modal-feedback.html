@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style-modal-feedback.css">
+    <title>Обратная связь</title>
+</head>
+
+<body>
+<!--Обратная связь-->
+<div class="feedback">
+    <div class="feedback-cross">
+        <button class="feedback-cross__button"></button>
+    </div>
+    <header class="feedback-title">
+        <h1 class="feedback-title_text">Обратная связь</h1>
+    </header>
+    <main class="feedback-forms">
+        <label><input type="text" id="name" name="name" placeholder="Имя" class="forms"></label>
+        <label><input type="tel" id="tel" name="tel" placeholder="Телефон" class="forms"></label>
+        <label><input type="email" id="email" name="email" placeholder="Электронная почта" class="forms"></label>
+        <label><textarea name="comment" id="comment-field" rows="5" placeholder="Сообщение" class="forms"></textarea></label>
+        <div class="feedback-text">
+            <p>Нажимая “отправить”, вы даете согласие на <span class="feedback-text_pink">обработку персональных данных</span> и
+                соглашаетесь с нашей <span class="feedback-text_pink">политикой конфиденциальности</span></p>
+        </div>
+        <div class="feedback-submit">
+        <input class="submit-button" type="submit" value="ОТПРАВИТЬ">
+        </div>
+    </main>
+
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="javascript-price.js"></script>
+</body>
+</html>

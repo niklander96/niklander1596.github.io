@@ -1,0 +1,395 @@
+@font-face {
+  font-family: "TT Lakes Thin";
+  src: url("../fonts/TTLakes-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("../fonts/TTLakes-Regular.woff") format("woff");
+}
+
+$white-color: #fff;
+$background-color: #f8f8f8;
+$divider: #EAEAEA;
+$title-divider: #41F6D7;
+$text-color-grey: #7E7E82;
+$scroll-border: #B8FFEC;
+$text-color-black: #1B1C21;
+$border-color: #D9FFF5;
+$pagination: #B5B6BC;
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  max-width: 1120px;
+  min-width: 320px;
+  background-color: $background-color;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 234px;
+
+}
+
+.center-brands {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.tit {
+  display: flex;
+  flex-direction: row;
+  min-width: 320px;
+  background-image: linear-gradient(90deg, $background-color 0%, $white-color 98.61%);
+  border-top: 1px solid $border-color;
+}
+
+.tit-text {
+  font-family: "TT Lakes Thin";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $text-color-grey;
+  padding: 16px;
+}
+
+.slider-brands {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+
+.slider-brands::after {
+  position: absolute;
+  content: '';
+  left: auto;
+  right: 0;
+  top: 5%;
+  bottom: auto;
+  width: 24px;
+  height: 81px;
+  z-index: 2;
+  background-image: linear-gradient(270deg, $background-color 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+.brands-slider__list {
+  margin: 0 8px 0 8px;
+  min-width: 320px;
+  display: flex;
+  min-height: 140px;
+  height: auto;
+}
+
+.brands-slider__list.brands-slider__list_item {
+  cursor: pointer;
+}
+
+.brands-slider__list.brands-slider__list_item > a {
+  display: block;
+  box-sizing: border-box;
+  width: 238px;
+  height: 72px;
+}
+
+.brands-slider__list_item {
+  display: block;
+  max-width: 238px;
+  height: 72px;
+  border: 1px solid $divider;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: 16px, 184px;
+  background-color: $white-color;
+  margin: 16px 8px 0 8px;
+}
+.brands-slider__list_item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.brands-slider__list_item_hidden {
+  display: none;
+}
+
+.brands-slider__list_item:nth-child(1) {
+  display: block;
+  background-image: url(../img/icon/lenovo.svg), url(../img/icon/go.svg);
+}
+
+.brands-slider__list_item:nth-child(2) {
+  display: block;
+  background-image: url(../img/icon/samsung.svg), url(../img/icon/go.svg);
+}
+
+.brands-slider__list_item:nth-child(3) {
+  display: block;
+  background-image: url(../img/icon/apple.svg), url(../img/icon/go.svg);
+}
+
+.brands-slider__list_item:nth-child(4) {
+  display: block;
+  background-image: url(../img/icon/viewsonic.svg), url(../img/icon/go.svg);
+}
+
+.brands-slider__list_item:nth-child(5) {
+  display: block;
+  background-image: url(../img/icon/bosch.svg), url(../img/icon/go.svg);
+}
+
+.brands-slider__list_item:nth-child(6) {
+  display: block;
+  background-image: url(../img/icon/hp.svg), url(../img/icon/go.svg);
+}
+
+.brands-slider__list_item:nth-child(7) {
+  display: block;
+  background-image: url(../img/icon/acer.svg), url(../img/icon/go.svg);
+}
+
+.brands-slider__list_item:nth-child(8) {
+  display: block;
+  background-image: url(../img/icon/sony.svg), url(../img/icon/go.svg);
+}
+
+.swiper-pagination {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: $pagination;
+
+}
+
+.brands-show-all {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tit-text {
+    padding-left: 24px;
+  }
+
+  .brands-slider__list .brands-slider__list_item > a {
+    display: block;
+    box-sizing: border-box;
+    width: 222px;
+    height: 72px;
+  }
+
+
+  .brands-slider__list {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 12px;
+    padding-top: 8px;
+  }
+
+  .brands-slider__list_item {
+    display: block;
+    width: 222px;
+    height: 72px;
+    border: 1px solid $divider;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: 16px, 168px;
+    background-color: $white-color;
+    margin: 16px 12px 0 12px;
+  }
+  .brands-slider__list_item>a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .brands-slider__list_item:nth-child(1) {
+    display: block;
+    background-image: url(../img/icon/lenovo.svg), url(../img/icon/go.svg);
+  }
+
+
+  .brands-slider__list_item:nth-child(2) {
+    display: block;
+    background-image: url(../img/icon/samsung.svg), url(../img/icon/go.svg);
+  }
+
+
+  .brands-slider__list_item:nth-child(3) {
+    display: block;
+    background-image: url(../img/icon/apple.svg), url(../img/icon/go.svg);
+  }
+
+
+  .brands-slider__list_item:nth-child(4) {
+    display: block;
+    background-image: url(../img/icon/viewsonic.svg), url(../img/icon/go.svg);
+  }
+
+
+  .brands-slider__list_item:nth-child(5) {
+    display: block;
+    background-image: url(../img/icon/bosch.svg), url(../img/icon/go.svg);
+  }
+
+
+  .brands-slider__list_item:nth-child(6) {
+    display: block;
+    background-image: url(../img/icon/hp.svg), url(../img/icon/go.svg);
+  }
+
+  .brands-slider__list_item:nth-child(7) {
+    display: none;
+  }
+
+  .brands-slider__list_item:nth-child(8) {
+    display: none;
+  }
+
+  .brands-show-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 24px 0 34px 24px;
+  }
+
+  .brands-show-all__button {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "TT Lakes Regular";
+    cursor: pointer;
+    width: 134px;
+    height: 24px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 900;
+    background-color: $background-color;
+    background-image: url(../img/icon/icon.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;;
+  }
+  .brands-show-all__button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .open-all {
+    padding-left: 35px;
+    justify-content: flex-start;
+    background-image: url(../img/icon/icon180.svg);
+  }
+  .brands-slider__list_item_hidden {
+    display: none;
+    flex-direction: row;
+    width: 222px;
+    height: 72px;
+    border: 1px solid $divider;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: 16px, 168px;
+    background-color: #fff;
+    margin: 16px 12px 0 12px;
+  }
+  .brands-slider__list_item_hidden:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .brands-slider__list_item_hidden:nth-child(9) {
+    display: none;
+    background-image: url(../img/icon/lenovo.svg), url(../img/icon/go.svg);
+  }
+
+  .brands-slider__list_item_hidden:nth-child(10) {
+    display: none;
+    background-image: url(../img/icon/samsung.svg), url(../img/icon/go.svg);
+  }
+
+  .brands-slider__list_item_hidden:nth-child(11) {
+    display: none;
+    background-image: url(../img/icon/bosch.svg), url(../img/icon/go.svg);
+  }
+
+  .brands-slider__list.brands-slider__list_item_hidden {
+    cursor: pointer;
+  }
+
+  .brands-slider__list.brands-slider__list_item_hidden > a {
+    box-sizing: border-box;
+    width: 222px;
+    height: 72px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 1120px) {
+  .tit-text {
+    padding: 32px;
+  }
+
+  .brands-slider__list {
+    padding-left: 16px;
+    padding-top: 8px;
+  }
+
+
+  .brands-slider__list_item {
+    display: block;
+    min-width: 238px;
+    height: 72px;
+    border: 1px solid $divider;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: 16px, 184px;
+    background-color: $white-color;
+    margin: 16px 16px 0 16px;
+  }
+  .brands-slider__list_item_hidden {
+    display: none;
+    width: 238px;
+    height: 72px;
+    min-width: 238px;
+    border: 1px solid $divider;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: 16px, 184px;
+    background-color: $white-color;
+    margin: 16px 16px 0 16px;
+  }
+  .brands-slider__list_item:nth-child(7) {
+    display: block;
+    background-image: url(../img/icon/acer.svg), url(../img/icon/go.svg);
+  }
+
+
+  .brands-slider__list_item:nth-child(8) {
+    display: block;
+    background-image: url(../img/icon/sony.svg), url(../img/icon/go.svg);
+  }
+
+  .brands-show-all {
+    display: block;
+    margin: 24px 0 34px 32px;
+  }
+}

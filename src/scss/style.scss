@@ -1,0 +1,61 @@
+@import './style0.scss';
+@import './style1.scss';
+@import './style2.scss';
+@import './style-techno.scss';
+@import './style-price.scss';
+@import "./style-modal-call.scss";
+@import "./style-modal-feedback.scss";
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("../fonts/TTLakes-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("../fonts/TTLakes-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Condensed-Light";
+  src: url("../fonts/TTLakesCondensed-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Condensed-Regular";
+  src: url("../fonts/TTLakesCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Light";
+  src: url("../fonts/TTLakes-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Thin";
+  src: url("../fonts/TTLakes-Thin.woff") format("woff");
+}
+
+
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: auto;
+
+}
+.land_blur {
+  display: none;
+  opacity: 10%;
+  z-index: 288;
+}
+
+.land {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  z-index: 0;
+}
+
+

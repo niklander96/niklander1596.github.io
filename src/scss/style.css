@@ -1,0 +1,29 @@
+@import './style0.css';
+@import './style1.css';
+@import './style2.css';
+@import './style-techno.css';
+@import './style-price.css';
+@import "./style-modal-call.css";
+@import "./style-modal-feedback.css";
+
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: auto;
+
+}
+.land_blur {
+  display: none;
+  opacity: 10%;
+
+}
+
+.land {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  z-index: 0;
+}
+
